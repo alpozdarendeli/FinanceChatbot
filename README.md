@@ -18,16 +18,10 @@ This project is a  chatbot application that utilizes OpenAI's GPT models and SER
 ## Installation
 To set up this project, you need to install the required dependencies:
 
-``bash
+```bash
 pip install -r requirements.txt
+```
 The required dependencies are listed in the requirements.txt file, including langchain, openai, and pydantic.
-
-## Dependencies
-
-- The required dependencies are listed in the `requirements.txt` file, including:
-  - `langchain`
-  - `openai`
-  - `pydantic`
 
 ## Usage
 
@@ -56,5 +50,7 @@ The required dependencies are listed in the requirements.txt file, including lan
 
 ```python
 web_search_agent = initialize_search_agent(serp_api_key="your-serp-api-key")
+response = web_search_agent.invoke({"input": "your query"})
+****
 response = web_search_agent.invoke({"input": "your query"})
 
