@@ -1,3 +1,4 @@
-MODEL_NAME = "gpt-3.5-turbo-1106"
+AGENT_MODEL_NAME = "gpt-3.5-turbo-1106"
+MODEL_NAME = "gpt-4-1106-preview"	
 TEMPERATURE = 0.7
 MAX_TOKENS = 1000
