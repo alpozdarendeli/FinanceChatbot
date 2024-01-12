@@ -1,7 +1,27 @@
 # Financial Chatbot
 
 ## Introduction
-This project is a chatbot application that leverages OpenAI's API, the SERP API, and Langchain tools to effectively manage user queries. Its primary objective is to distinguish between routine and financial inquiries and respond appropriately using specialized tools. The logic for distinguishing between routine and complex queries relies on OpenAI's API. When faced with routine queries, the chatbot performs web searches. In contrast, when dealing with intricate financial inquiries, it engages Langchain's agent, which conducts searches on Google Finance and Google Scholar to provide comprehensive responses.
+
+This project presents a  chatbot application, integrating OpenAI's advanced API and Assistant with Langchain tools and the SERP API. It's designed to adeptly navigate and respond to a diverse range of user queries, utilizing two key functionalities: `FinanceSearch` and `WebSearch`.
+
+## Core Features
+
+### FinanceSearch
+
+Tailored for complex financial inquiries, `FinanceSearch` activates Langchain's agent capabilities. It performs in-depth searches across platforms like Google Finance and Google Scholar. This tool specializes in fetching detailed financial data, market trends, and scholarly articles, ensuring users receive well-rounded and insightful financial information.
+
+### WebSearch
+
+For general or routine queries, the chatbot employs `WebSearch`. This function utilizes the vast scope of the internet to conduct thorough searches, returning relevant and timely information from a broad array of sources. This ensures users get accurate, up-to-date responses for non-financial queries.
+
+## Integration and Functionality
+
+The chatbot intelligently determines the nature of each query. It then selectively activates either `FinanceSearch` or `WebSearch`, aligning its search strategy with the query's context. This integration facilitates precise and relevant information retrieval, making the chatbot a versatile tool for various informational needs.
+
+---
+
+This project bridges the gap between advanced AI conversational abilities and specialized information retrieval, providing users with a reliable, multifaceted assistant for diverse inquiries. Whether it's detailed financial advice or general knowledge, the chatbot is adept at delivering concise, accurate, and contextually appropriate responses.
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
